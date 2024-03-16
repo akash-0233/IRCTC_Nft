@@ -1,0 +1,41 @@
+/* Navbar.css */
+
+.logo {
+  height: 60px;
+  margin-right: 20px;
+}
+body {
+  
+  background-color: #387bc1;
+  color: #fff;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: flex-start; /* Align navbar to the left */
+  align-items: center;
+  padding: 20px 40px; /* Add padding for better spacing */
+  background-color: #0D1B2A; /* Set background color for navigation bar */
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Make the list items flex containers */
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #fff; /* Set text color to white */
+  text-decoration: none;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #FF6B6B; /* Matching hover color */
+}

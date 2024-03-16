@@ -1,0 +1,81 @@
+/* Scoped styles for Irctc component */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #387bc1;
+    color: #fff;
+}
+
+    .irctc-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .irctc-section {
+        background-color: #1F4068;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        margin: 20px;
+        padding: 30px;
+        max-width: 400px;
+        width: 100%;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .irctc-section:hover {
+        background-color: #2A628F;
+        transform: translateY(-5px);
+    }
+
+    .irctc-section h2 {
+        color: #F7F7FF;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+    }
+
+    .input-group label {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #A7C5EB;
+    }
+
+    .input-group input {
+        width: calc(100% - 30px);
+        /* Adjusted width */
+        padding: 14px;
+        font-size: 16px;
+        border: 2px solid #64B6AC;
+        border-radius: 8px;
+        background-color: #fff;
+        color: #333;
+        transition: border-color 0.3s ease, font-size 0.3s ease;
+    }
+
+    .input-group input:focus {
+        outline: none;
+        border-color: #45ADA8;
+        font-size: 18px;
+    }
+
+    button {
+        padding: 12px 24px;
+        font-size: 18px;
+        background-color: #45ADA8;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #2A9D8F;
+    }
