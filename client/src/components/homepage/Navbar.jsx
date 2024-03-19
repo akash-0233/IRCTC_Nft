@@ -10,7 +10,7 @@ import { useState } from 'react';
 function Navbar({ setState, setAddress, SetAlert }) {
   const[button, setButton]=useState("Connect");
 
-  const TrainTicketABI = [
+  const TrainTicketABI =[
     {
       "inputs": [
         {
@@ -830,7 +830,7 @@ function Navbar({ setState, setAddress, SetAlert }) {
       "type": "function"
     }
   ];
-  const contractAddress = "0xC7483fdc19f8Cf5Dab7D83f987bb1BF1A687E82b";
+  const contractAddress = "0x2153caB37F5c5b1F084b4c30AC21Dd4cf9EB4A59";
   const connectWallet = async () => {
     try {
       if (window.ethereum) {
