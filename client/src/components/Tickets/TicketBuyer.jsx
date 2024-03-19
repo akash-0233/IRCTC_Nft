@@ -4,7 +4,7 @@ import './TicketBuyer.css';
 import trainIcon from '../train-icon.png';
 import irctcStamp from '../irctc.png';
 
-function TicketBuyer({ state, address }) {
+function TicketBuyer({ state, address,SetAlert }) {
     const [trainNumber, setTrainNumber] = useState('');
     const [trainClass, setTrainClass] = useState('');
     const [departureDate, setDepartureDate] = useState('');
@@ -18,26 +18,32 @@ function TicketBuyer({ state, address }) {
     }
 
     const handleBuyTicket = async (event) => {
-        event.preventDefault();
-        console.log(departureDate.day, departureDate.month, departureDate.year);
+         event.preventDefault();
+        if (state.contract !== null) {
+                
         const timestamp = convertToTimestamp(departureDate.day, departureDate.month, departureDate.year);
-        console.log(timestamp);
         try {
               await state.contract.methods.buyTicket(trainNumber, trainClass, timestamp).send({
                 from: address, // User's Ethereum address
                 value: 100 // Amount of Ether to send
               });
-              alert("Ticket Buyed");
+              SetAlert("success","Tickek Booked");
         } catch (error) {
             console.error('Error buying ticket:', error);
         }
+        } else if(window.ethereum){
+            SetAlert("error","Connect Metamask");            
+        }else{
+            SetAlert("error","Install Metamask");
+        }
+   
     };
     const days = Array.from({ length: 31 }, (_, i) => i + 1);
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     const years = Array.from({ length: 10 }, (_, i) => new Date().getFullYear() + i);
 
 
-    return (
+    return  (
         <div className="ticket-buyer-container">
             <div className="header">
                 <img src={trainIcon} alt="Train Icon" className="train-icon" />

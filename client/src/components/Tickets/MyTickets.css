@@ -25,7 +25,7 @@
 }
 
 .ticket-image {
-    width: 200px; /* Adjust image width */
+    width: 250px; /* Adjust image width */
     height: auto;
     border-radius: 5px;
     transition: transform 0.2s ease;
@@ -66,8 +66,8 @@
     background-color: rgba(0, 0, 0, 0);
     width: 80%;
     height: 80%;
-    max-width: 800px;
-    max-height: 600px;
+    max-width: 1200px;
+    max-height: 1200px;
     overflow: hidden;
     padding: 20px;
     border-radius: 5px;
@@ -83,13 +83,44 @@
 
 .modal-text {
     position: absolute;
-    top: 12%; /* Adjust the vertical position */
-    left: 50%; /* Adjust the horizontal position */
+    top: 17%; /* Adjust the vertical position */
+    left:43.5%; /* Adjust the horizontal position */
+    transform: translate(-50%, -50%);
+    background-color: transparent; /* Transparent background */
+    padding: 11px;
+    border-radius: 5px;
+    font-size: 11px; /* Change the font size */
+    font-family: Arial, sans-serif; /* Change the font family */
+    font-weight: bold; /* Make the text bold */
+    color: black;
+    z-index: 2; /* Ensure the text is above the image */
+}
+
+.modal-text1 {
+    
+    position: absolute;
+    top: 17%; /* Adjust the vertical position */
+    left: 60.8%; /* Adjust the horizontal position */
     transform: translate(-50%, -50%);
     background-color: transparent; /* Transparent background */
     padding: 10px;
     border-radius: 5px;
-    font-size: 24px; /* Change the font size */
+    font-size: 11px; /* Change the font size */
+    font-family: Arial, sans-serif; /* Change the font family */
+    font-weight: bold; /* Make the text bold */
+    color: black;
+    z-index: 2; /* Ensure the text is above the image */
+}
+
+.modal-text2 {
+    position: absolute;
+    top: 33.5%; /* Adjust the vertical position */
+    left: calc(29.2% + 150px); 
+    transform: translate(-50%, -50%);
+    background-color: transparent; /* Transparent background */
+    padding: 19px;
+    border-radius: 5px;
+    font-size: 13px; /* Change the font size */
     font-family: Arial, sans-serif; /* Change the font family */
     font-weight: bold; /* Make the text bold */
     color: black;
@@ -97,3 +128,67 @@
 }
 
 
+
+.modal-text4 {
+    position: absolute;
+    top: 36.5%; /* Adjust the vertical position */
+    left: 45%; /* Adjust the horizontal position */
+    transform: translate(-50%, -50%);
+    background-color: transparent; /* Transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 11px; /* Change the font size */
+    font-family: Arial, sans-serif; /* Change the font family */
+    font-weight: bold; /* Make the text bold */
+    color: black;
+    z-index: 2; /* Ensure the text is above the image */
+    
+}
+
+.modal-text5 {
+    position: absolute;
+    top: 33.5%; /* Adjust the vertical position */
+    left: calc(43.5% + 150px); 
+    transform: translate(-50%, -50%);
+    background-color: transparent; /* Transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 13px; /* Change the font size */
+    font-family: Arial, sans-serif; /* Change the font family */
+    font-weight: bold; /* Make the text bold */
+    color: black;
+    z-index: 2; /* Ensure the text is above the image */
+}
+.modal-text6 {
+    position: absolute;
+    top: 36.5%; /* Adjust the vertical position */
+    left: 58.4%; /* Adjust the horizontal position */
+    transform: translate(-50%, -50%);
+    background-color: transparent; /* Transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 11px; /* Change the font size */
+    font-family: Arial, sans-serif; /* Change the font family */
+    font-weight: bold; /* Make the text bold */
+    color: black;
+    z-index: 2; /* Ensure the text is above the image */
+}
+
+
+.modal-text7 {
+    position: absolute;
+    top: 31%; /* Adjust the vertical position */
+    left: 50%; /* Adjust the horizontal position */
+    transform: translate(-50%, -50%);
+    background-color: transparent; /* Transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px; /* Change the font size */
+    font-family: Arial, sans-serif; /* Change the font family */
+    font-weight: bold; /* Make the text bold */
+    color: rgb(134, 14, 147); /* Change the text color */
+    z-index: 2; /* Ensure the text is above the image */
+    letter-spacing: 2px; /* Increase space between two words */
+    word-spacing: 50px; /* Add space between words */
+
+}

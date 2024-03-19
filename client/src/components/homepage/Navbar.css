@@ -1,28 +1,24 @@
 /* Navbar.css */
 
 .logo {
-  height: 60px;
+  height: 40px; /* Decrease logo height */
   margin-right: 20px;
-}
-body {
-  
-  background-color: #387bc1;
-  color: #fff;
 }
 
 .header-inner {
   display: flex;
-  justify-content: flex-start; /* Align navbar to the left */
+  justify-content: space-between; /* Align navbar items to the left and right */
   align-items: center;
-  padding: 20px 40px; /* Add padding for better spacing */
-  background-color: #0D1B2A; /* Set background color for navigation bar */
+  padding: 10px 40px; /* Decrease top and bottom padding */
+  background-color: #0D1B2A;
 }
 
 .nav-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Make the list items flex containers */
+  display: flex;
+  align-items: center; /* Align items vertically */
 }
 
 .nav-item {
@@ -30,12 +26,27 @@ body {
 }
 
 .nav-link {
-  color: #fff; /* Set text color to white */
+  color: #fff;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.2rem; /* Decrease font size */
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #FF6B6B; /* Matching hover color */
+  color: #FF6B6B;
+}
+
+.connect-wallet-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.connect-wallet-btn:hover {
+  background-color: #fff;
+  color: #0D1B2A;
 }

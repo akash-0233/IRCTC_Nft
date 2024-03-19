@@ -1,11 +1,11 @@
 .ticket-buyer-container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
+  max-width: 500px; /* Decrease max-width */
+  margin: 30px auto; /* Decrease margin */
+  padding: 15px; /* Decrease padding */
   border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #1F4068; /* Background color */
-  color: #F7F7FF; /* Text color */
+  border-radius: 8px;
+  background-color: #1F4068;
+  color: #F7F7FF;
   position: relative;
 }
 
@@ -13,18 +13,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Decrease margin */
 }
 
 .ticket-buyer-container .train-icon {
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
+  width: 80px; /* Decrease width */
+  height: 80px; /* Decrease height */
+  margin-right: 15px; /* Decrease margin */
 }
 
 .ticket-buyer-container .ticket-buyer-title {
-  font-size: 2rem;
-  color: #F7F7FF; /* Title color */
+  font-size: 1.6rem; /* Decrease font size */
 }
 
 .ticket-buyer-container .ticket-buyer-form {
@@ -33,22 +32,23 @@
 }
 
 .ticket-buyer-container .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Decrease margin */
 }
 
 .ticket-buyer-container label {
   display: block;
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #A7C5EB; /* Label color */
+  font-size: 16px; /* Decrease font size */
+  margin-bottom: 8px; /* Decrease margin */
+  color: #A7C5EB;
 }
 
 .ticket-buyer-container input[type="text"] {
-  width: calc(100% - 30px);
-  padding: 14px;
-  font-size: 16px;
+  width: calc(100% - 20px); /* Adjust width */
+  height: 10px; /* Decrease height */
+  padding: 10px; /* Decrease padding */
+  font-size: 17px; /* Decrease font size */
   border: 2px solid #64B6AC;
-  border-radius: 8px;
+  border-radius: 6px;
   background-color: #fff;
   color: #333;
   transition: border-color 0.3s ease, font-size 0.3s ease;
@@ -57,30 +57,30 @@
 .ticket-buyer-container input[type="text"]:focus {
   outline: none;
   border-color: #45ADA8;
-  font-size: 18px;
+  font-size: 10px; /* Increase font size */
 }
 
 .ticket-buyer-container .btn {
   width: 50%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 8px; /* Decrease padding */
   border: none;
-  border-radius: 8px;
-  background-color: #45ADA8; /* Button background color */
-  color: #fff; /* Button text color */
-  font-size: 18px;
+  border-radius: 6px;
+  background-color: #45ADA8;
+  color: #fff;
+  font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .ticket-buyer-container .btn:hover {
-  background-color: #2A9D8F; /* Button hover background color */
+  background-color: #2A9D8F;
 }
 
 .ticket-buyer-container .irctc-stamp {
   position: absolute;
-  bottom: 10px; /* Decrease the distance from the bottom */
-  right: 10px; /* Decrease the distance from the right */
-  width: 50px; /* Decrease the width */
+  bottom: 5px; /* Decrease distance from bottom */
+  right: 5px; /* Decrease distance from right */
+  width: 40px; /* Decrease width */
   height: auto;
 }

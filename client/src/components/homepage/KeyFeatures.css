@@ -1,14 +1,12 @@
-/* Features.css */
-
 .features {
-  margin-top: 50px;
-  text-align: center; /* Center-align the content */
-  background-color:  #387bc1; /* Set background color for features section */
-  padding: 50px 0; /* Add padding for better spacing */
+  margin-top: 30px; /* Decrease top margin */
+  text-align: center;
+  background-color: #387bc1;
+  padding: 30px 0; /* Decrease top and bottom padding */
 }
 
 .features-title {
-  font-size: 2.5rem;
+  font-size: 2rem; /* Decrease font size */
   color: #FF6B6B;
 }
 
@@ -16,20 +14,23 @@
   list-style-type: none;
   padding: 0;
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
-  justify-content: center; /* Center-align the items */
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align the items horizontally */
 }
 
 .feature-item {
-  font-size: 1.5rem;
-  margin: 0 20px 15px; /* Add horizontal margin and bottom margin */
-  padding: 10px 20px; /* Add padding for better spacing */
-  border: 2px solid #FF6B6B; /* Add border */
-  border-radius: 5px; /* Add border radius */
-  background-color: #268ebf; /* White background */
-  transition: transform 0.3s ease; /* Add transition effect */
+  font-size: 1rem; /* Font size */
+  margin: 10px; /* Margin around items */
+  padding: 10px 20px; /* Padding */
+  border: 2px solid #FF6B6B; /* Border */
+  border-radius: 5px; /* Border radius */
+  background-color: #268ebf; /* Background color */
+  transition: transform 0.3s ease; /* Transition effect */
+  position: relative; /* Position relative for pseudo-element */
 }
 
+
+
 .feature-item:hover {
-  transform: translateY(-5px); /* Add slight hover effect */
+  transform: translateY(-5px); /* Hover effect */
 }

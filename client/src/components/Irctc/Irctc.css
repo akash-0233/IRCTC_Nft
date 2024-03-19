@@ -79,3 +79,16 @@ body {
     button:hover {
         background-color: #2A9D8F;
     }
+    .uri-container {
+        max-width: 300px; /* Adjust the maximum width as needed */
+      }
+      
+      .uri-text {
+        font-size: 14px; /* Initial font size */
+        line-height: 1.2; /* Adjust line height as needed */
+        text-overflow: ellipsis; /* Show ellipsis (...) for overflow text */
+      }
+      
+      
+      
+      
