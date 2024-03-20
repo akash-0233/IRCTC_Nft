@@ -830,7 +830,7 @@ function Navbar({ setState, setAddress, SetAlert }) {
       "type": "function"
     }
   ];
-  const contractAddress = "0x2153caB37F5c5b1F084b4c30AC21Dd4cf9EB4A59";
+  const contractAddress = "0xB48c86e1c0d92bF24D604C135CF1BA53675541ef";
   const connectWallet = async () => {
     try {
       if (window.ethereum) {

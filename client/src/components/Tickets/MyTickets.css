@@ -83,8 +83,8 @@
 
 .modal-text {
     position: absolute;
-    top: 17%; /* Adjust the vertical position */
-    left:43.5%; /* Adjust the horizontal position */
+    top: 16.6%; /* Adjust the vertical position */
+    left:44%; /* Adjust the horizontal position */
     transform: translate(-50%, -50%);
     background-color: transparent; /* Transparent background */
     padding: 11px;
@@ -99,8 +99,8 @@
 .modal-text1 {
     
     position: absolute;
-    top: 17%; /* Adjust the vertical position */
-    left: 60.8%; /* Adjust the horizontal position */
+    top: 16.6%; /* Adjust the vertical position */
+    left: 61.6%; /* Adjust the horizontal position */
     transform: translate(-50%, -50%);
     background-color: transparent; /* Transparent background */
     padding: 10px;
